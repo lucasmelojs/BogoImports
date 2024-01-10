@@ -8,8 +8,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/Home';
 import About from './routes/About';
 import Contact from './routes/Contact';
+import Product from './routes/Product';
+import ProductDetails from './routes/ProductDetails';
 import ErrorPage from './routes/ErrorPage';
-    // import Footer from './componentes/Footer';
 
 
 const router = createBrowserRouter([
@@ -29,8 +30,17 @@ const router = createBrowserRouter([
     {
       path: '/Contact',
       element: <Contact />
-    }
+    },
+    {
+      path: '/Product',
+      element: <Product />
+    },
 
+    // Nested Routes /:id
+    {
+      path: 'product/:id',
+      element: <ProductDetails />,
+    }
   ]
 }
 ])
