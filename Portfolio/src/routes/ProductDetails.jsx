@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 
+// Nested routes
 const ProductDetails = () => {
   const { id } = useParams();
 
