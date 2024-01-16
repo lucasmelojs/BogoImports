@@ -11,6 +11,7 @@ const url = "http://localhost:3000/products"
 
 function App() {
   // resgatando dados
+  const url = "http://localhost:3000/products"
    const [products, setProducts] = useState([])
 
    useEffect(() => {

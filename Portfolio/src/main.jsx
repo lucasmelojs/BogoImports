@@ -12,6 +12,8 @@ import Product from './routes/Product';
 import ProductDetails from './routes/ProductDetails';
 import ErrorPage from './routes/ErrorPage';
 
+//styles
+//import '.src/components/css/Navbar.module.css';
 
 const router = createBrowserRouter([
 {
