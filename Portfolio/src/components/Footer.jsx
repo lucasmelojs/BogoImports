@@ -1,3 +1,4 @@
+import styles from "../components/css/footer.module.css";
 const Footer = () => {
   return (
     <div> 

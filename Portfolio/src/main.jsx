@@ -10,10 +10,10 @@ import About from './routes/About';
 import Contact from './routes/Contact';
 import Product from './routes/Product';
 import ProductDetails from './routes/ProductDetails';
+import ListProduct from './components/ListProduct';
 import ErrorPage from './routes/ErrorPage';
 
 //styles
-//import '.src/components/css/Navbar.module.css';
 
 const router = createBrowserRouter([
 {
@@ -36,6 +36,11 @@ const router = createBrowserRouter([
     {
       path: '/Product',
       element: <Product />
+    },
+    {
+
+    path: '/ListProduct',
+    element: <ListProduct />
     },
 
     // Nested Routes /:id
