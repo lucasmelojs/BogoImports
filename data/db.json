@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Gol",
+            "brand": "Volkswagen",
+            "price": "20.000",
+            "image_cover": "https://media.discordapp.net/attachments/1199035419141091462/1199035604088922175/gol.jpg?ex=65c113ed&is=65ae9eed&hm=de00dfafa2f94e544ca39f67240ce41ae5ce670257a1d85ae9f5e8b5365c7b17&=&format=webp&width=569&height=569"
+        },
+        {
+            "id": 2,
+            "name": "Captiva",
+            "brand": "Chevrolet",
+            "price": "13.000",
+            "image_cover": "https://media.discordapp.net/attachments/1199035419141091462/1199035602553815074/captiva.jpg?ex=65c113ec&is=65ae9eec&hm=43716a7096c18e863a5c301cdeccdc2091040e2d57c7b14afad8473bd36119ca&=&format=webp&width=569&height=569"
+        },
+        {
+            "id": 3,
+            "name": "Megane",
+            "brand": "Renault",
+            "price": "10.000",
+            "image_cover": "https://media.discordapp.net/attachments/1199035419141091462/1199035604428652635/megane.jpg?ex=65c113ed&is=65ae9eed&hm=3997d30c0b1ccdba6915a5cab30599919d42bbdf098f950ca29e792c4ddc93f8&=&format=webp&width=569&height=569"
+        },
+        {
+            "id": 4,
+            "name": "Focus",
+            "brand": "Ford",
+            "price": "18.000",
+            "image_cover": "https://media.discordapp.net/attachments/1199035419141091462/1199035603719815358/focus.jpg?ex=65c113ec&is=65ae9eec&hm=cc53dfd9889c99f85de43e66398a06d2f019c18d7a29766ec4b86bda5d322a50&=&format=webp&width=569&height=569"
+        },
+        {
+            "id": 5,
+            "name": "Onix",
+            "brand": "Chevrolet",
+            "price": "16.000",
+            "image_cover": "https://media.discordapp.net/attachments/1199035419141091462/1199035604776796282/onix.jpg?ex=65c113ed&is=65ae9eed&hm=6d24d2f0fb7cbcba157f1709dabc4a28dc9c438725afce32473107b2b7d8ba04&=&format=webp&width=569&height=569"
+        },
+        {
+            "id": 6,
+            "name": "Cobalt",
+            "brand": "Renault",
+            "price": "24.000",
+            "image_cover": "https://media.discordapp.net/attachments/1199035419141091462/1199035603279421470/cobalt.jpg?ex=65c113ec&is=65ae9eec&hm=cef5095291ca1272d36ca6b9053588e70d6eb9fc171c868cbed7e895aca56368&=&format=webp&width=569&height=569"
+        }
+    ]
+}
