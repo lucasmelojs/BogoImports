@@ -1,44 +1,47 @@
 .card_list {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.5%;
+  list-style: none;
+  margin: 40px;
+  align-items: center;
 }
 
 .info {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin: 10px 10px
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 10px;
 }
 
 .card {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    margin: 0px 20px;
-    background-color: rgb(241, 241, 241);
-    height: 400px;
-    width: 340px;
-    border: 2px;
-    border-style: solid;
-    border-color: #be151587;
-    border-radius: 10px;
-    box-shadow: -4px 4px 30px 12px #26262611;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  padding-top: 24px;
+  background-color: rgb(252, 252, 252);
+  height: 360px;
+  width: 280px;
+  border: 2px;
+  border-style: solid;
+  border-color: #b3b3b3;
+  border-radius: 10px;
+  box-shadow: -4px 4px 30px 12px #26262611;
 }
 
 .card_title {
-    align-items: left;
-    color: #252525;
-    margin-left: 4px;
-
+  align-items: left;
+  color: #252525;
+  margin-left: 4px;
 }
 
 .image_cover {
-    height: 300px;
-    width: 300px;
-    border-radius: 10px;
-    margin-top: 20px;
+  height: 240px;
+  width: 240px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  box-shadow: 4px 4px 30px 12px #26262611;
 }

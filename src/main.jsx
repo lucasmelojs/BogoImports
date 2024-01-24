@@ -11,6 +11,7 @@ import Contact from './routes/Contact';
 import Product from './routes/Product';
 import ProductDetails from './routes/ProductDetails';
 import ListProduct from './components/ListProduct';
+import AddProductPage from './routes/AddProductPage';
 import ErrorPage from './routes/ErrorPage';
 
 //styles
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: 'product/:id',
         element: <ProductDetails />,
+      },
+      {
+        path: 'AddProductPage',
+        element: <AddProductPage />,
       }
     ]
   }
