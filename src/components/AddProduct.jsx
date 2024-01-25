@@ -5,8 +5,8 @@ export function AddProduct() {
         id: 0,
         brand: '',
         name: '',
-        price: 0,
         fipe: 0,
+        price: 0,
     });
 
     const [products, setProducts] = useState([]);
