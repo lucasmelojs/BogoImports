@@ -14,7 +14,6 @@ import ListProduct from './components/ListProduct';
 import AddProductPage from './routes/AddProductPage';
 import ErrorPage from './routes/ErrorPage';
 
-//styles
 
 const router = createBrowserRouter([
   {

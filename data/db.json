@@ -47,62 +47,6 @@
       "fipe": 45788,
       "price": 36779,
       "image_cover": "https://media.discordapp.net/attachments/1199035419141091462/1199035603279421470/cobalt.jpg?ex=65c113ec&is=65ae9eec&hm=cef5095291ca1272d36ca6b9053588e70d6eb9fc171c868cbed7e895aca56368&=&format=webp&width=569&height=569"
-    },
-    {
-      "id": "7883",
-      "name": "Argo",
-      "price": "27888",
-      "brand": "Fiat",
-      "fipe": "38000"
-    },
-    {
-      "id": "e904",
-      "name": "asdad",
-      "price": "234",
-      "brand": "1232",
-      "fipe": "324"
-    },
-    {
-      "id": "3457",
-      "name": "dsa",
-      "price": "0234",
-      "brand": "das",
-      "fipe": "023"
-    },
-    {
-      "id": "d616",
-      "name": "dsa",
-      "price": "0234",
-      "brand": "das",
-      "fipe": "023"
-    },
-    {
-      "id": "39ed",
-      "name": "dsa",
-      "price": "0234",
-      "brand": "das",
-      "fipe": "023"
-    },
-    {
-      "id": "db8c",
-      "name": "dsa",
-      "price": "0234",
-      "brand": "das",
-      "fipe": "023"
-    },
-    {
-      "id": "7553",
-      "name": "dsa",
-      "price": "0234",
-      "brand": "das",
-      "fipe": "023"
-    },
-    {
-      "id": "be4f",
-      "name": "dsa",
-      "price": "0234",
-      "brand": "das",
-      "fipe": "023"
     }
   ]
 }
