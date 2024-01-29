@@ -1,6 +1,6 @@
 import React from 'react';
 import { useProducts } from '../hooks/useProducts';
-
+import styles from "../components/css/AddProduct.module.css";
 export function AddProduct() {
     const { products, addProduct } = useProducts();
 
@@ -19,45 +19,54 @@ export function AddProduct() {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className={styles.form} onSubmit={handleSubmit}>
             <div value={product.id}></div>
 
-            <label>
-                Marca:
-                <input
-                    type="text"
-                    value={product.brand}
-                    onChange={(e) => setProduct({ ...product, brand: e.target.value })}
-                />
-            </label>
-            <label>
-                Nome:
-                <input
-                    type="text"
-                    value={product.name}
-                    onChange={(e) => setProduct({ ...product, name: e.target.value })}
-                />
-            </label>
-            <label>
-                Tabela Fipe:
-                <input
-                    type="number"
-                    value={product.fipe}
-                    onChange={(e) => setProduct({ ...product, fipe: e.target.value })}
-                />
-            </label>
-            <label>
-                Preço:
-                <input
-                    type="number"
-                    value={product.price}
-                    onChange={(e) => setProduct({ ...product, price: e.target.value })}
-                />
-            </label>
+            <div className={styles.container}>
+                <label className={styles.label}>
+                    Marca:
+                    <input
+                        type="text"
+                        value={product.brand}
+                        onChange={(e) => setProduct({ ...product, brand: e.target.value })}
+                    />
+                </label>
+            </div>
+            <div className={styles.container}>
+                <label className={styles.label}>
+                    Nome:
+                    <input
+                        type="text"
+                        value={product.name}
+                        onChange={(e) => setProduct({ ...product, name: e.target.value })}
+                    />
+                </label>
+            </div>
+            <div className={styles.container}>
+                <label className={styles.label}>
+                    Tabela Fipe:
+                    <input
+                        type="number"
+                        value={product.fipe}
+                        onChange={(e) => setProduct({ ...product, fipe: e.target.value })}
+                    />
+                </label>
+            </div>
+            <div className={styles.container}>
+                <label className={styles.label}>
+                    Preço:
+                    <input 
+                        type="number"
+                        value={product.price}
+                        onChange={(e) => setProduct({ ...product, price: e.target.value })}
+                    />
+                </label>
+            </div>
+
             {/* Add other form inputs as needed */}
-            <button type="submit">Add Product</button>
+            <button className={styles.container} type="submit">Add Product</button>
         </form>
     );
-}
 
+}
 export default AddProduct;

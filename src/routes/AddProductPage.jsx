@@ -1,8 +1,12 @@
 import AddProduct from "../components/AddProduct"
+import ListProduct from "../components/ListProduct"
 
 const AddProductPage = () => {
     return (
-        < AddProduct />
+        <div>
+            < AddProduct />,
+            <ListProduct />
+        </div>
     )
 }
 
