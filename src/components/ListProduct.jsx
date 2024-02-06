@@ -3,7 +3,7 @@ import { useFetch } from '../hooks/useFetch';
 import styles from "../components/css/Card.module.css";
 
 const ListProduct = () => {
-  const url = "http://localhost:3000/products"
+  const url = "http://localhost:4000/api/products"
   const callFetch = true;
   const { data, loading, error, method } = useFetch(url, callFetch);
   return (
@@ -13,7 +13,7 @@ const ListProduct = () => {
 
         {data && data.map((product) => (
 
-          <div key={product.id} className={styles.card}>
+          <div key={`${product.brand}-${product.name}-${product.price}`} className={styles.card}>
 
             <img className={styles.image_cover} src={product.image_cover} alt={product.name} />
             <ul className={styles.info}>
