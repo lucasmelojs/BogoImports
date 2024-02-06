@@ -11,6 +11,10 @@ const getProducts = async (req, res) => {
 const getProduct = async (req, res) => {
   const { id } = req.params;
 
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(404).json({ error: "No such product" })
+  }
+
   const product = await Product.findById(id);
 
   if (!product) {
@@ -43,11 +47,43 @@ const createProduct = async (req, res) => {
 };
 
 // delete a product
+const deleteProduct = async (req, res) => {
+  const { id } = req.params;
+
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(404).json({ error: "No such product" })
+  }
+
+  const product = await Product.findOneAndDelete({ _id: id });
+  if (!product) {
+    return res.status(404).json({ msg: "Product not found" });
+  }
+
+  res.status(200).json({ msg: "Deleted Successfully!" });
+}
 
 // update a product
+const updateProduct = async (req, res) => {
+  const { id } = req.params
+
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(404).json({ error: "No such product" })
+  }
+
+  const product = await Product.findOneAndUpdate({ _id: id }, {
+    ...req.body
+  })
+  if (!product) {
+    return res.status(404).json({ error: "No such product" })
+  }
+  res.status(200).json({ msg: "Updated Successfully!" });
+}
+
 
 module.exports = {
   createProduct,
   getProducts,
   getProduct,
+  deleteProduct,
+  updateProduct
 };
