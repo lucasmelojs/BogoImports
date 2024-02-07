@@ -13,7 +13,7 @@ const ListProduct = () => {
 
         {data && data.map((product) => (
 
-          <div key={`${product.brand}-${product.name}-${product.price}`} className={styles.card}>
+          <div key={product._id} className={styles.card}>
 
             <img className={styles.image_cover} src={product.image_cover} alt={product.name} />
             <ul className={styles.info}>
