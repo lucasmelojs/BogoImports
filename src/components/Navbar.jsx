@@ -13,7 +13,6 @@ const Navbar = () => {
           <li className={styles.item}><Link to='/Contact'>Contact</Link></li>
           <li className={styles.item}><Link to='/Product'>Product</Link></li>
           <li className={styles.item}><Link to='/ListProduct'>List</Link></li>
-          <li className={styles.item}><Link to='/AddProductPage'>AddProduct</Link></li>
         </ul>
       </nav>
     </div>
